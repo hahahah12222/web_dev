@@ -1,0 +1,19 @@
+p{
+    font-family: fantasy;
+    font-weight: 700;
+    font-style: normal;
+    font-variant: small-caps;
+}
+button{
+    padding:20px;
+    margin:50px;
+}
+#content-wrapper{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+}
+#img-wrapper{
+   display:flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
