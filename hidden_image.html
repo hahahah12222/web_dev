@@ -1,7 +1,82 @@
 <!-- CP 7th hidden image  -->
-<DOCTYPE html>
- <html lang="en">
-    <head>
-        <title> hidden image </title>
-        <meta charset="UTF-8">
-        </head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Honeybees</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            color: #333;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        h1, h2 {
+            color: #d4a373;
+        }
+        .container {
+            position: relative;
+        }
+        .hidden-image {
+            display: none;
+            position: absolute;
+            top: 0;
+            left: 100%;
+            margin-left: 20px;
+            border: 2px solid #ccc;
+            padding: 10px;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            z-index: 10;
+        }
+        .hover-trigger:hover + .hidden-image {
+            display: block;
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-top: 10px;
+        }
+        .main-image {
+            width: 100%;
+            max-width: 400px;
+            display: block;
+            margin: 15px 0;
+        }
+        ul {
+            list-style-type: disc;
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Honeybees</h1>
+
+    <p>Honeybees are incredible insects that play a vital role in our ecosystem. They are social creatures, living together in large, organized colonies, typically inside hives or tree cavities. Each colony consists of three types of bees: a single queen, many female worker bees, and a few male drones. The workers are responsible for most of the colony's tasks, including foraging for nectar and pollen, building the honeycomb, and caring for the young, while the queen's primary job is reproduction.</p>
+
+    <div class="container">
+        <p class="hover-trigger">One of the most amazing aspects of honeybee behavior is their ability to communicate the location of food sources to other bees using a special "waggle dance". Hover over this spot to see another interesting fact!</p>
+        <div class="hidden-image">
+            <p>Did you know a single worker bee will only produce about 1/12th of a teaspoon of honey in her entire life?</p>
+        </div>
+    </div>
+
+    <img src="upload.wikimedia.org" alt="A  image of a honeybee" class="https://i.natgeofe.com/k/54e4ae4c-732e-485b-9b5f-2588d1416e97/honeybee-whitebackground_4x3.jpg">
+
+    <h2> Facts About Honeybees from google</h2>
+
+    <ul>
+        <li>They can fly up to 15 miles per hour.</li>
+        <li>They visit approximately 2 million flowers to make one pound of honey.</li>
+        <li>Bees use the sun as a compass for navigation.</li>
+        <li>A queen bee can lay up to 2,000 eggs per day.</li>
+    </ul>
+
+</body>
+</html>
